@@ -106,7 +106,7 @@ let temp = document.querySelectorAll("#temp");
 let rightData = document.querySelectorAll("#data");
 async function getWeather(city) {
   console.log("called the weather function");
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=240cfe482602e6296ba5cde94ce94427&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=39d121fc5683d32e5bc388e6d08eea70&units=metric`;
   const response = await fetch(url);
   const data = await response.json();
   if (data.cod === 200) {
